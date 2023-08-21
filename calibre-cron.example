@@ -1,0 +1,3 @@
+# must be ended with a new line "LF" (Unix) and not "CRLF" (Windows)
+*/5 * * * * /opt/calibre/calibredb add /root/books-to-add/ -r --with-library http://localhost:8080#calibre-library --username admin --password qwerty && rm -r /root/books-to-add/* >> /var/log/cron.log 2>&1
+# An empty line is required at the end of this file for a valid cron file.

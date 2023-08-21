@@ -1,0 +1,15 @@
+version: '3.8'
+name: "books"
+services:
+
+  calibre:
+    container_name: calibre
+    image: 'akeb/calibre'
+    build: ./
+    restart: always
+    volumes:
+      - ${PWD}/books-to-add:/root/books-to-add/
+      - ${PWD}/users.sqlite:/root/users.sqlite:rw
+    ports:
+      - ${DOCKER_PORT}:8080
+
