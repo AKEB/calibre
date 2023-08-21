@@ -1,5 +1,5 @@
-version: '3.8'
-name: "books"
+version: '3.3'
+# name: "books"
 services:
 
   calibre:
